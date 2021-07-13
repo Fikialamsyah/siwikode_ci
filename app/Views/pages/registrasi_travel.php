@@ -2,34 +2,33 @@
 
 
 <?= $this->section('content'); ?>
-<div class="container mt-3">
     <div class="container">
     <div class="card mt-3">
         <div class="card-header">
             <b><?= $title ?></b>
         </div>
         <div class="card-body">
-            <a href="<?= base_url('Travel/add'); ?>" class="btn btn-info">Tambah </a>
+            <a href="<?= base_url('Travel/add'); ?>" class="btn btn-info">Add Data </a>
             <br><br>
-            <table class="table table-bordered">
+            <table class="table  table-bordered text-center">
                 <tr>
                     <th>No</th>
-                    <th>Nama</th>
-                    <th>Jenis</th>
-                    <th>Bintang</th>
-                    <th>Aksi</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Star</th>
+                    <th>Action</th>
                 </tr>
                 <?php
                 $no = 1;
                 foreach ($travels as $travel) : ?>
-                    <tr>
+                    <tr class="table-hover">
                         <td><?php echo $no++; ?></td>
                         <td><?php echo $travel['nama']; ?></td>
                         <td><?php echo $travel['jenis']; ?></td>
                         <td><?php echo $travel['bintang']; ?></td>
                         <td>
                             <a class="btn-warning btn" href="/Travel/edit/<?php echo $travel['id']; ?>">Edit</a>
-                            <a class="btn-danger btn" onclick="confirm('Are you sure to delete ?')" href="/Travel/delete/<?php echo $travel['id']; ?>">Hapus</a>
+                            <a class="btn-danger btn" onclick="confirm('Are you sure to delete ?')" href="/Travel/delete/<?php echo $travel['id']; ?>">Delete</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -52,13 +51,6 @@
     </div>
     </div>
 </div>
-
-<script>
-function confirmToDelete(el){
-    $("#delete-button").attr("href", el.dataset.href);
-    $("#confirm-dialog").modal('show');
-}
-</script>
 
 
 <?= $this->endSection(); ?>

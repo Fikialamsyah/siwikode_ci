@@ -8,7 +8,7 @@
             <b><?= $title; ?></b>
         </div>
         <div class="card-body">
-            <form action="<?php echo base_url('Culinary/update') ?>" method="post">
+            <form action="<?php echo base_url('Travel/update') ?>" method="post">
                 <input type="hidden" name="id"  value="<?= $travel['id']; ?>">
                 <div class="form-group row mb-2">
                     <label for="nama" class="col-sm-2 label">Nama Kuliner</label>
@@ -49,7 +49,7 @@
                 <div class="form-group row">
                     <div class="col-sm-4">
                         <input type="submit" value="submit" onclick="confirm('Are you sure to update ? ')" class="btn btn-info">
-                        <a class="btn btn-danger" href="<?= base_url('Culinary/registrasi');?>">Cancel</a>
+                        <a class="btn btn-danger" href="<?= base_url('Travel/registrasi');?>">Cancel</a>
                     </div>
             </form>
         </div>

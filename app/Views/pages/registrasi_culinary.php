@@ -9,20 +9,20 @@
             <b><?= $title ?></b>
         </div>
         <div class="card-body">
-            <a href="<?= base_url('Culinary/add'); ?>" class="btn btn-info">Tambah </a>
+            <a href="<?= base_url('Culinary/add'); ?>" class="btn btn-info">Add Data</a>
             <br><br>
             <table class="table table-bordered">
-                <tr>
+                <tr class="text-center">
                     <th>No</th>
-                    <th>Nama</th>
-                    <th>Jenis</th>
-                    <th>Bintang</th>
-                    <th>Aksi</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Star</th>
+                    <th>Action</th>
                 </tr>
                 <?php
                 $no = 1;
                 foreach ($culinarys as $culinary) : ?>
-                    <tr>
+                    <tr class="text-center">
                         <td><?php echo $no++; ?></td>
                         <td><?php echo $culinary['nama']; ?></td>
                         <td><?php echo $culinary['jenis']; ?></td>

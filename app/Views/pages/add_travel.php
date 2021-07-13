@@ -10,13 +10,13 @@
         <div class="card-body">
             <form action="<?php echo base_url('Travel/save') ?>" method="post">
                 <div class="form-group row mb-2">
-                    <label for="nama" class="col-sm-2 label">Nama Kuliner</label>
+                    <label for="nama" class="col-sm-2 label">Travel Name</label>
                     <div class="col-sm-4">
                         <input type="text" name="nama" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row mb-2">
-                    <label for="nama" class="col-sm-2 label">Jenis</label>
+                    <label for="nama" class="col-sm-2 label">Type</label>
                     <div class="col-sm-4">
                         <select class="form-select" id="exampleSelect1" name="jenis">
                             <option>-Pilih-</option>
@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="form-group row mb-2">
-                    <label for="nama" class="col-sm-2 label">Alamat</label>
+                    <label for="nama" class="col-sm-2 label">Address</label>
                     <div class="col-sm-4">
                         <textarea type="text-area" name="alamat" rows="3" class="form-control"></textarea>
                     </div>
@@ -39,13 +39,13 @@
                     </div>
                 </div>
                 <div class="form-group row mb-2">
-                    <label for="nama" class="col-sm-2 label">Bintang</label>
+                    <label for="nama" class="col-sm-2 label">Star</label>
                     <div class="col-sm-4">
                         <input type="text" name="bintang" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row mb-2">
-                    <label for="nama" class="col-sm-2 label">Foto</label>
+                    <label for="nama" class="col-sm-2 label">Photo</label>
                     <div class="col-sm-4">
                         <input type="file" name="foto" class="form-control">
                     </div>

@@ -26,10 +26,10 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Amanda Amallia Sya'bandina 0110120207</li>
+                            <li>Dessy Fitriyani Dewi 0110120048</li>
+                            <li>Dimas Syahrul Firdaus 0110120016</li>
+                            <li>Nuraini Febrianti 0110120031</li>
                         </ul>
                     </div>
                 </div>

@@ -17,7 +17,7 @@ class Culinary extends BaseController
     {
         $travel = new CulinaryModel();
         $data = [
-            'title' => 'Registrasi Kuliner',
+            'title' => 'Registration Culinary',
             'culinarys' => $travel->findAll()
         ];
         return view('pages/registrasi_culinary', $data);
@@ -26,7 +26,7 @@ class Culinary extends BaseController
     public function add()
     {
         $data = [
-            'title' => 'Tambah Kuliner',
+            'title' => 'Add Culinary',
             'culinarys' => ['Cafe', 'Restaurant', 'Pasar Kaget']
         ];
         return view('pages/add_culinary', $data);
@@ -52,7 +52,7 @@ class Culinary extends BaseController
         $culinarys = new CulinaryModel();
         $culinary= $culinarys->find($id);
         $data = [
-            'title' => 'Edit Culinary',
+            'title' => 'Update Culinary',
             'culinary' => $culinary,
             'types' => ['Cafe', 'Restaurant', 'Pasar Kaget']
         ];
