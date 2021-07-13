@@ -3,9 +3,8 @@
 
 <?= $this->section('content'); ?>
 <section class="herosiwikode">
-    <div class="container">
+    <div class="container mt-2">
         <section>
-                <div class="bg-light"><br>
                 <?php
                     $target = 'a'; 
                     foreach($culinarys as $culinary): ?>
@@ -13,13 +12,13 @@
                         
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="card mb-4 box-shadow bg-dark">
+                                <div class="card mb-4 box-shadow bg-white">
                                     <img class="card-img-top" src="<?= base_url('images/'.$culinary['foto']); ?>" height="500" alt="Card image cap">
                                     <div class="card-body">
-                                        <p class="card-text text-white"><?= $culinary['nama']; ?></p>
+                                        <p class="card-text display-6 text-dark"><?= $culinary['nama']; ?></p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
-                                                <button type="button" class="btn btn-sm btn-primary mr-1" data-bs-toggle="modal" data-bs-target="<?= '#'.$target;?>">Detail</button>
+                                                <button type="button" class="btn btn-sm btn-primary mr-1 p-3" data-bs-toggle="modal" data-bs-target="<?= '#'.$target;?>">Detail</button>
                                             </div>
                                             <div class="modal fade" id="<?= $target;?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">

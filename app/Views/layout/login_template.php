@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?= base_url('css/bootstrap.min.css') ?>" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8e23d86a11.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>" crossorigin="anonymous">
 
     <title><?= $title; ?></title>
 </head>

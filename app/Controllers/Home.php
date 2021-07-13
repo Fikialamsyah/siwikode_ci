@@ -6,6 +6,14 @@ class Home extends BaseController
 {
 	public function index()
 	{
-		return view('welcome_message');
+		echo view('pages/home');
+	}
+
+	public function login()
+	{
+		$data = [
+            'title' => 'Login'
+        ];
+		return view('pages/login', $data);
 	}
 }

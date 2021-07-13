@@ -8,48 +8,51 @@
             <b><?= $title; ?></b>
         </div>
         <div class="card-body">
-            <form action="<?php echo base_url('Culinary/update') ?>" method="post">
-                <input type="hidden" name="id"  value="<?= $culinary['id']; ?>">
+            <form action="<?php echo base_url('Travel/save') ?>" method="post">
                 <div class="form-group row mb-2">
                     <label for="nama" class="col-sm-2 label">Nama Kuliner</label>
                     <div class="col-sm-4">
-                        <input type="text" name="nama" class="form-control"  value="<?= $culinary['nama']; ?>">
+                        <input type="text" name="nama" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row mb-2">
-                    <label for="jenis" class="col-sm-2 label" >Jenis</label>
+                    <label for="nama" class="col-sm-2 label">Jenis</label>
                     <div class="col-sm-4">
-                    <input type="text" name="jenis" class="form-control" value="<?= $culinary['jenis']; ?>">
+                        <select class="form-select" id="exampleSelect1" name="jenis">
+                            <option>-Pilih-</option>
+                            <?php foreach($travels as $travel) :?>
+                            <option value="<?= $travel; ?>"><?= $travel; ?></option>
+                            <?php endforeach; ?>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group row mb-2">
-                    <label for="alamat" class="col-sm-2 label">Alamat</label>
+                    <label for="nama" class="col-sm-2 label">Alamat</label>
                     <div class="col-sm-4">
-                        <input type="text-area"  name="alamat" rows="3" class="form-control" value="<?= $culinary['alamat'];?>">
+                        <textarea type="text-area" name="alamat" rows="3" class="form-control"></textarea>
                     </div>
                 </div>
                 <div class="form-group row mb-2">
                     <label for="nama" class="col-sm-2 label">Telp</label>
                     <div class="col-sm-4">
-                        <input type="text" name="telp" class="form-control" value="<?= $culinary['telp']; ?>">
+                        <input type="text" name="telp" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row mb-2">
                     <label for="nama" class="col-sm-2 label">Bintang</label>
                     <div class="col-sm-4">
-                        <input type="text" name="bintang" class="form-control" value="<?= $culinary['bintang']; ?>">
+                        <input type="text" name="bintang" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row mb-2">
                     <label for="nama" class="col-sm-2 label">Foto</label>
                     <div class="col-sm-4">
-                        <input type="text" name="foto" class="form-control" value="<?= $culinary['foto']; ?>">
+                        <input type="file" name="foto" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-4">
-                        <input type="submit" value="submit" onclick="confirm('Are you sure to update ? ')" class="btn btn-info">
-                        <a class="btn btn-danger" href="<?= base_url('Culinary/registrasi');?>">Cancel</a>
+                        <input type="submit" value="submit" class="btn btn-info">
                     </div>
             </form>
         </div>

@@ -7,7 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?= base_url('css/bootstrap.min.css') ?>" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8e23d86a11.js" crossorigin="anonymous"></script>
+
 
     <title>SIWIKODE</title>
 </head>
